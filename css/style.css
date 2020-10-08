@@ -693,7 +693,7 @@ a:focus {
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.56px;
-  margin-bottom: 27px;
+  padding-bottom: 27px;
 }
 
 .about .about__text {
@@ -1266,11 +1266,7 @@ button.works__button:hover {
     padding: 15px 20px;
   }
 
-  .about-interests {
-    margin-top: 50px;
-  }
-
-  .about-interests .text-center {
+  .about .text-center {
     color: #00d7bb;
     font-size: 30px;
   }
