@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       offsetSections: false,
       resetSliders: false,
       fadingEffect: false,
-      normalScrollElements: '.container',
+      normalScrollElements: '.swipe',
       scrollOverflow: false,
       scrollOverflowReset: false,
       scrollOverflowOptions: null,
