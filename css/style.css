@@ -828,11 +828,9 @@ a:focus {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.9px;
-  margin-bottom: 50px;
 }
 
 .skills .progress {
-  margin-bottom: 60px;
   height: 13px;
   background: #313741;
   font-size: 13px;
@@ -861,7 +859,7 @@ a:focus {
 .skills .progress__name {
   font-size: 20px;
   color: #ffffff;
-  margin-bottom: 15px;
+  padding: 30px 0;
   font-weight: 400;
   text-transform: uppercase;
   display: -webkit-box;
@@ -875,7 +873,7 @@ a:focus {
 .skills .progress__name svg {
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  padding-right: 5px;
   -webkit-transition: all .5s ease-out;
   -o-transition: all .5s ease-out;
   transition: all .5s ease-out;
@@ -931,7 +929,7 @@ a:focus {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.9px;
-  margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 button.works__button {
@@ -1279,7 +1277,6 @@ button.works__button:hover {
 
   .skills .skills__title {
     font-size: 30px;
-    margin-bottom: 50px;
   }
 
   .skills .skills__title .progress {
@@ -1297,7 +1294,6 @@ button.works__button:hover {
 
   .works .text-center {
     font-size: 30px;
-    margin-bottom: 50px;
   }
 
   .footer {
