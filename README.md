@@ -1,5 +1,5 @@
 # Welcome to my web resume!
-![enter image description here](https://i.imgur.com/Kyzjvhb.jpeg)
+![enter image description here](https://i.imgur.com/Otff3JV.png)
 ## ## You can see the site in action
 ><a  href="https://mportfolio.github.io/CV.V.2.0/">LOOK THIS SITE</a>
 ## ## How to use
@@ -19,7 +19,7 @@
 ## ## What I used
 - HTML(<a  href="https://pugjs.org/api/getting-started.html">PUG</a>)
 - CSS(<a  href="https://sass-lang.com/documentation/syntax">SASS</a>)
-- JAVASCRIPT
+- JAVASCRIPT(<a  href="https://www.w3schools.com/jquery/jquery_intro.asp">JQUERY</a>)
 - <a href="https://gulpjs.com/">GULP</a>
 
 
