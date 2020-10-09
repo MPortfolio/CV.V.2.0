@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+   
 });
 $('.page-slider').each(function () {
    var $slider = $(this);
@@ -103,37 +103,37 @@ $('.page-slider').each(function () {
 
 });
 
-let toggleContent = document.getElementById('toggle-content');
+// let toggleContent = document.getElementById('toggle-content');
 
-document.getElementById('btn').addEventListener('click',
-   function (event) {
-      event.preventDefault();
+// document.getElementById('btn').addEventListener('click',
+//    function (event) {
+//       event.preventDefault();
 
-      if (!toggleContent.classList.contains('show')) {
-         toggleContent.classList.add('show');
-         toggleContent.style.height = 'auto';
+//       if (!toggleContent.classList.contains('show')) {
+//          toggleContent.classList.add('show');
+//          toggleContent.style.height = 'auto';
 
-         var height = toggleContent.clientHeight + 'px';
+//          var height = toggleContent.clientHeight + 'px';
 
-         toggleContent.style.height = '0px';
+//          toggleContent.style.height = '0px';
 
-         setTimeout(function () {
-            toggleContent.style.height = height;
-         }, 0);
-         document.getElementById('btn').innerHTML = "HIDE"
-      } else {
-         toggleContent.style.height = '0px';
+//          setTimeout(function () {
+//             toggleContent.style.height = height;
+//          }, 0);
+//          document.getElementById('btn').innerHTML = "HIDE"
+//       } else {
+//          toggleContent.style.height = '0px';
 
-         toggleContent.addEventListener('transitionend',
-            function () {
-               toggleContent.classList.remove('show');
-            }, {
-            once: true
-         });
-         document.getElementById('btn').innerHTML = "MORE"
+//          toggleContent.addEventListener('transitionend',
+//             function () {
+//                toggleContent.classList.remove('show');
+//             }, {
+//             once: true
+//          });
+//          document.getElementById('btn').innerHTML = "MORE"
 
-      }
-   });
+//       }
+//    });
 
 var pJS = function (tag_id, params) {
 
