@@ -1,5 +1,5 @@
 # Welcome to my web resume!
-![enter image description here](https://i.imgur.com/O1drcrY.png)
+![enter image description here](https://i.imgur.com/6rVt0yj.png)
 ## ## You can see the site in action
 ><a  href="https://mportfolio.github.io/CV.V.2.0/">LOOK THIS SITE</a>
 ## ## How to use
