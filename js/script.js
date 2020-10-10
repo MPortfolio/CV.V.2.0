@@ -11,15 +11,15 @@ var myFullpage = new fullpage('#fullpage', {
    slidesNavigation: false,
    slidesNavPosition: 'bottom',
 
-   //Scrolling
+   //Scrolling 
    css3: true,
    scrollingSpeed: 700,
    autoScrolling: true,
    fitToSection: true,
    fitToSectionDelay: 1000,
    scrollBar: false,
-   easing: 'easeInOutCubic',
-   easingcss3: 'ease',
+   easing: 'easeInOutCubic ',
+   easingcss3: 'ease-in-out',
    loopBottom: true,
    loopTop: true,
    loopHorizontal: true,
