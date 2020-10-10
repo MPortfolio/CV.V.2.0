@@ -74,6 +74,10 @@ var myFullpage = new fullpage('#fullpage', {
    afterSlideLoad: function (section, origin, destination, direction) { },
    onSlideLeave: function (section, origin, destination, direction) { }
 });
+const btn = document.querySelector('.about__btn')
+btn.onclick = function () {
+   document.getElementById('link').click()
+};
 
 var pJS = function (tag_id, params) {
 

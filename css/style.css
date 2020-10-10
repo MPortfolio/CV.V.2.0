@@ -231,10 +231,6 @@ a {
   text-align: center;
 }
 
-.color {
-  color: red !important;
-}
-
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
   position: absolute;
@@ -319,6 +315,7 @@ a {
 
 .checkbox-all:checked + label {
   margin-left: 17px;
+  z-index: 999999999;
 }
 
 .seperator {
@@ -335,6 +332,7 @@ a {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  z-index: 999999999;
 }
 
 .project {
@@ -345,6 +343,7 @@ a {
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  z-index: 999999999;
 }
 
 .project.js,
