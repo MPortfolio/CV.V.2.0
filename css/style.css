@@ -214,6 +214,11 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343434', endColorstr='#000000',GradientType=1 );
 }
 
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #05c7ae;
+}
+
 .no-upper {
   text-transform: none;
 }
