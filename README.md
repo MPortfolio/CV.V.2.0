@@ -19,7 +19,7 @@
 ## ## What I used
 - HTML(<a  href="https://pugjs.org/api/getting-started.html">PUG</a>)
 - CSS(<a  href="https://sass-lang.com/documentation/syntax">SASS</a>)
-- JAVASCRIPT(<a  href="https://www.w3schools.com/jquery/jquery_intro.asp">JQUERY</a>)
+- JAVASCRIPT
 - <a href="https://gulpjs.com/">GULP</a>
 
 
