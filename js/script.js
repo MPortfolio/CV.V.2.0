@@ -1,108 +1,79 @@
-$(window).on("load", function () {
-   $(".loader-container").fadeOut(500);
+
+var myFullpage = new fullpage('#fullpage', {
+   //Navigation
+   menu: '#menu',
+   lockAnchors: false,
+   anchors: ['firstPage', 'secondPage'],
+   navigation: true,
+   navigationPosition: 'right',
+   navigationTooltips: ['Intro', 'About', 'Skills', 'Works', 'Contacts'],
+   showActiveTooltip: false,
+   slidesNavigation: false,
+   slidesNavPosition: 'bottom',
+
+   //Scrolling
+   css3: true,
+   scrollingSpeed: 700,
+   autoScrolling: true,
+   fitToSection: true,
+   fitToSectionDelay: 1000,
+   scrollBar: false,
+   easing: 'easeInOutCubic',
+   easingcss3: 'ease',
+   loopBottom: true,
+   loopTop: false,
+   loopHorizontal: true,
+   continuousVertical: false,
+   continuousHorizontal: false,
+   scrollHorizontally: false,
+   interlockedSlides: false,
+   dragAndMove: false,
+   offsetSections: false,
+   resetSliders: false,
+   fadingEffect: false,
+   normalScrollElements: '',
+   scrollOverflow: true,
+   scrollOverflowReset: false,
+   scrollOverflowOptions: null,
+   touchSensitivity: 15,
+   bigSectionsDestination: null,
+
+   //Accessibility
+   keyboardScrolling: true,
+   animateAnchor: true,
+   recordHistory: true,
+
+   //Design
+   controlArrows: true,
+   verticalCentered: true,
+   sectionsColor: ['#ccc', '#fff'],
+   paddingTop: '0',
+   paddingBottom: '',
+   fixedElements: '',
+   responsiveWidth: 0,
+   responsiveHeight: 0,
+   responsiveSlides: false,
+   parallax: false,
+   parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
+   cards: false,
+   cardsOptions: { perspective: 100, fadeContent: true, fadeBackground: true },
+
+   //Custom selectors
+   sectionSelector: '.section',
+   slideSelector: '.slide',
+
+   lazyLoading: true,
+
+   //events
+   onLeave: function (origin, destination, direction) { },
+   afterLoad: function (origin, destination, direction) { },
+   afterRender: function () { },
+   afterResize: function (width, height) { },
+   afterReBuild: function () { },
+   afterResponsive: function (isResponsive) { },
+   afterSlideLoad: function (section, origin, destination, direction) { },
+   onSlideLeave: function (section, origin, destination, direction) { }
 });
-$('.page-slider').each(function () {
-   var $slider = $(this);
-   var numberOfSlides = $slider.find('.panel').length;
-
-   $slider.find('.panel:eq(0)').addClass('_active');
-   $slider.find('.nav-dot:eq(0)').addClass('active');
-
-   var $activeSlide = $slider.find('.panel._active');
-   var $nextBtn = $slider.find('.next-btn');
-   var $prevBtn = $slider.find('.prev-btn');
-
-   $('.nav-dot').on('click', function () {
-      var slideToGo = $(this).data('slide');
-      goToSlide(slideToGo);
-   });
-
-
-   $slider.on('slide.changed', function () {
-      console.log('slide changed !');
-      $('.nav-dot').removeClass('active');
-      var $activeDot = $('.nav-dot[data-slide="' + $('.panel._active').data('slide') + '"]');
-      $activeDot.addClass('active');
-   });
-
-   $nextBtn.on('click', function (event) {
-      nextSlide();
-   });
-
-   $prevBtn.on('click', function (event) {
-      prevSlide();
-   });
-
-
-   function nextSlide() {
-      $activeSlide = $slider.find('.panel._active');
-      var $nextSlide = $activeSlide.next('.panel');
-      $activeSlide.removeClass('_active');
-      $nextSlide.addClass('_active');
-
-      //$activeSlide = $nextSlide;
-
-      var slideIndex = $slider.find('.panel._active').index('.panel');
-      console.log(slideIndex);
-
-
-      if (slideIndex >= numberOfSlides || slideIndex <= -1) {
-         firstSlide();
-         $slider.trigger('slide.changed');
-
-      } else {
-         $slider.trigger('slide.changed');
-      }
-
-   }
-
-   function prevSlide() {
-      $activeSlide = $slider.find('.panel._active');
-
-      var $prevSlide = $activeSlide.prev('.panel');
-      //console.log($prevSlide);
-      $activeSlide.removeClass('_active');
-      $prevSlide.addClass('_active');
-      //$activeSlide = $prevSlide;
-
-      var slideIndex = $slider.find('.panel._active').index();
-      console.log(slideIndex);
-
-
-
-      if (typeof $prevSlide === 'undefined' || $prevSlide === null || $prevSlide.length == -1 || slideIndex <= -1) {
-         lastSlide();
-         $slider.trigger('slide.changed');
-      } else {
-         $slider.trigger('slide.changed');
-      }
-
-   }
-
-   function firstSlide() {
-      $('.panel._active').removeClass('_active');
-      $slider.find('.panel:eq(0)').addClass('_active');
-      $activeSlide = $slider.find('.panel:eq(0)');
-
-   }
-
-   function lastSlide() {
-      //console.log('last');
-      $('.panel._active').removeClass('_active');
-      $slider.find('.panel').eq(numberOfSlides - 1).addClass('_active');
-      //$activeSlide = $slider.find('.panel:eq(numberOfSlides)');
-
-   }
-
-   function goToSlide(slideToGo) {
-      $('.panel._active').removeClass('_active');
-      $slider.find('.panel').eq(slideToGo - 1).addClass('_active');
-      $activeSlide = $slider.find('.panel').eq(slideToGo - 1).addClass('_active');
-      $slider.trigger('slide.changed');
-   }
-
-});
-
 
 var pJS = function (tag_id, params) {
 
