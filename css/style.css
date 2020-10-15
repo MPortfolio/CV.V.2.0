@@ -214,119 +214,12 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343434', endColorstr='#000000',GradientType=1 );
 }
 
-.wrapper {
-  width: 100%;
+.header {
   padding: 20px 0;
-  position: relative;
-  z-index: 999999999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-bottom: 48px;
 }
 
-.wrapper .container {
-  text-align: center;
-}
-
-.color {
-  color: red !important;
-}
-
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label {
-  position: relative;
-  padding-left: 12px;
-  padding-right: 12px;
-  letter-spacing: 3px;
-  cursor: pointer;
-  line-height: 30px;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #fff;
-  margin-right: 10px;
-  margin-left: 10px;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-  content: "";
-  border-radius: 2px;
-  height: 20px;
-  padding: 5px;
-  background-color: #e74c3c;
-  position: absolute;
-  bottom: 0;
-  left: 6px;
-  top: -4px;
-  z-index: -1;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-[type="radio"]:not(:checked) + label:after {
-  opacity: 0;
-  width: 0;
-}
-
-[type="radio"]:checked + label:after {
-  opacity: 1;
-  width: calc(100% - 24px);
-}
-
-.checkbox-all:checked + label:after,
-.checkbox-all:not(:checked) + label:after {
-  background-color: hotpink;
-}
-
-.checkbox-js:checked + label:after,
-.checkbox-js:not(:checked) + label:after {
-  background-color: #f1c40f;
-}
-
-.checkbox-html:checked + label:after,
-.checkbox-html:not(:checked) + label:after {
-  background-color: #ff932b;
-}
-
-.checkbox-react:checked + label:after,
-.checkbox-react:not(:checked) + label:after {
-  background-color: #64e1fe;
-}
-
-.checkbox-vue:checked + label:after,
-.checkbox-vue:not(:checked) + label:after {
-  background-color: #6edbbe;
-}
-
-.checkbox-angular:checked + label:after,
-.checkbox-angular:not(:checked) + label:after {
-  background-color: #e75139;
-}
-
-.checkbox-all:checked + label {
-  margin-left: 17px;
-}
-
-.seperator {
-  width: 100%;
-  height: 30px;
-}
-
-.cards {
+.filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,76 +228,105 @@ a {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-.project {
+.button {
+  padding: 12px 24px;
+  margin-right: 18px;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  position: relative;
+  background: transparent;
+  margin-right: 0;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.button:active {
+  bottom: -1px;
+}
+
+.custome {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.2s linear;
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.project.js,
-.project.html,
-.project.react,
-.project.vue,
-.project.angular {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-  padding: 0;
-  margin: 0;
-  border-width: 0;
-  width: 0%;
-  height: 0%;
-}
-
-.checkbox-all:checked ~ .cards .project.js,
-.checkbox-all:checked ~ .cards .project.html,
-.checkbox-all:checked ~ .cards .project.react,
-.checkbox-all:checked ~ .cards .project.vue,
-.checkbox-all:checked ~ .cards .project.angular,
-.checkbox-js:checked ~ .cards .project.js,
-.checkbox-html:checked ~ .cards .project.html,
-.checkbox-react:checked ~ .cards .project.react,
-.checkbox-vue:checked ~ .cards .project.vue,
-.checkbox-angular:checked ~ .cards .project.angular {
-  opacity: 1;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 400px;
-          flex: 0 1 400px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  visibility: visible;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
 }
 
 .card {
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  border-radius: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
+  margin: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
-.card:hover {
-  -webkit-box-shadow: 2px 2px 43px rgba(38, 225, 178, 0.34);
-          box-shadow: 2px 2px 43px rgba(38, 225, 178, 0.34);
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+.anime {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
 }
 
-.card img {
-  width: 400px;
-  height: 100%;
+.hide {
+  -webkit-animation-name: hide;
+          animation-name: hide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hide {
+  0% {
+    visibility: visible;
+    height: 200px;
+  }
+
+  100% {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    max-width: 0;
+    font-size: 0;
+    margin: 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    visibility: visible;
+    height: 200px;
+  }
+
+  100% {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    max-width: 0;
+    font-size: 0;
+    margin: 0;
+  }
 }
 
 .no-upper {
@@ -1192,6 +1114,12 @@ button.works__button:hover {
   }
 }
 
+@media screen and (max-width: 920px) {
+  .card {
+    margin: 15px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .intro {
     width: 100%;
@@ -1296,16 +1224,6 @@ button.works__button:hover {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .container {
-    width: 100%;
-  }
-
-  label {
-    display: block;
   }
 }
 
