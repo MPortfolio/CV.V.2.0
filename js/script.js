@@ -61,9 +61,7 @@ var myFullpage = new fullpage('#fullpage', {
    //Custom selectors
    sectionSelector: '.section',
    slideSelector: '.slide',
-
    lazyLoading: true,
-
    //events
    onLeave: function (origin, destination, direction) { },
    afterLoad: function (origin, destination, direction) { },
@@ -3211,3 +3209,4 @@ window.particlesJS.load = function (tag_id, path_config_json, callback) {
    xhr.send();
 
 };
+
