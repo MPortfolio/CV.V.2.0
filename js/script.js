@@ -13,7 +13,7 @@ var myFullpage = new fullpage('#fullpage', {
 
    //Scrolling 
    css3: true,
-   scrollingSpeed: 800,
+   scrollingSpeed: 750,
    autoScrolling: true,
    fitToSection: true,
    fitToSectionDelay: 1000,
@@ -22,7 +22,7 @@ var myFullpage = new fullpage('#fullpage', {
    easingcss3: 'ease-in-out',
    loopBottom: true,
    loopTop: true,
-   loopHorizontal: true,
+   loopHorizontal: false,
    continuousVertical: false,
    continuousHorizontal: false,
    scrollHorizontally: false,
