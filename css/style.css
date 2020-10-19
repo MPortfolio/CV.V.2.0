@@ -1119,6 +1119,12 @@ button.works__button:hover {
   }
 }
 
+@media screen and (max-width: 860px) {
+  .works .text-center {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .intro {
     width: 100%;
