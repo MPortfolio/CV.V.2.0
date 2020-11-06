@@ -1106,10 +1106,6 @@ $(window).on('load', function () {
             {
                 text: '<a href="https://oleg312.github.io/CV/">Original version</a>',
             },
-            {
-                text: 'Stay here',
-            },
-
         ]
     })
 });
