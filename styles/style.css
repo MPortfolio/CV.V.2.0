@@ -1152,6 +1152,7 @@ body {
 }
 
 .card:hover {
+  cursor: pointer;
   -webkit-box-shadow: 0 0 50px -2px #02cfb4;
           box-shadow: 0 0 50px -2px #02cfb4;
 }
@@ -1321,13 +1322,19 @@ body {
   position: fixed;
   text-align: center;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -o-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   -ms-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.notie-container a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .notie-background-success {
@@ -1371,7 +1378,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .notie-button {
@@ -1448,7 +1455,15 @@ body {
 
 .notie-background-success {
   background: #05c7ae;
-  z-index: 9999;
+  z-index: 999;
+}
+
+.notie-background-info {
+  background: #313741;
+}
+
+.notie-background-overlay {
+  background: grey;
 }
 
 .loading {

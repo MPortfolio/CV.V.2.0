@@ -1029,6 +1029,60 @@ document.addEventListener("DOMContentLoaded", function() {
         notie.alert({ type: 1, text: 'SUCCESS!', stay: false, position: "bottom" })
         document.getElementById('link').click()
     };
+    // ! WORKS ALERT
+    let tajam = document.querySelector('#tajam')
+    let agency = document.querySelector('#agency')
+    let maglic = document.querySelector('#maglic')
+    tajam.onclick = function () {
+        notie.select({
+            text: 'Your choise',
+            cancelText: 'Close',
+            cancelCallback: function () {
+                notie.alert({ type: 5, text: 'Cancel!' })
+            },
+            choices: [
+                {
+                    text: '<a href="https://github.com/MPortfolio/Tajam">GitHub</a>',
+                },
+            ]
+        })
+    }
+    agency.onclick = function () {
+        notie.select({
+            text: 'Your choise',
+            cancelText: 'Close',
+            cancelCallback: function () {
+                notie.alert({ type: 5, text: 'Cancel!' })
+            },
+            choices: [
+                {
+                    text: '<a href="https://github.com/MPortfolio/Agency">GitHub</a>',
+                },
+                {
+                    text: '<a href="https://mportfolio.github.io/Agency/">LiveDemo</a>',
+                },
+
+            ]
+        })
+    }
+    maglic.onclick = function () {
+        notie.select({
+            text: 'Your choise',
+            cancelText: 'Close',
+            cancelCallback: function () {
+                notie.alert({ type: 5, text: 'Cancel!' })
+            },
+            choices: [
+                {
+                    text: '<a href="https://github.com/MPortfolio/Maglic">GitHub</a>',
+                },
+                {
+                    text: '<a href="https://mportfolio.github.io/Maglic/">LiveDemo</a>',
+                },
+
+            ]
+        })
+    }
     // !HAMBURGER AND NAV
     $(".ham").click(function() {
         $('html').addClass('lock')
