@@ -394,12 +394,9 @@ img {
   margin-bottom: 0;
 }
 
-.header__list li {
-  padding: 0 10px;
-}
-
 .header__list li.active a {
   color: #05c7ae;
+  padding: 0 10px;
 }
 
 .header__list a {
@@ -1949,6 +1946,10 @@ body {
   .container {
     max-width: none;
     margin: 0;
+  }
+
+  .header {
+    height: 60px;
   }
 }
 
