@@ -396,7 +396,6 @@ img {
 
 .header__list li.active a {
   color: #05c7ae;
-  padding: 0 10px;
 }
 
 .header__list a {
@@ -409,6 +408,7 @@ img {
   -webkit-transition: color .3s ease;
   -o-transition: color .3s ease;
   transition: color .3s ease;
+  margin: 0 10px;
 }
 
 .header__list a::before {
