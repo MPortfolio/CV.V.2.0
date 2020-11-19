@@ -970,7 +970,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0;
 }
 
 .skills .container .row {
@@ -1169,7 +1168,7 @@ body {
   font-family: "OpenSans-Bold";
   text-transform: uppercase;
   letter-spacing: 0.9px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .footer .footer__git {
@@ -2013,6 +2012,14 @@ body {
   }
 }
 
+@media screen and (max-height: 810px) {
+  .skills,
+  .works {
+    display: block;
+    padding: 100px 0 0 0;
+  }
+}
+
 @media screen and (max-height: 320px) {
   .field {
     display: none;
@@ -2167,6 +2174,14 @@ body {
 }
 
  @media screen and (max-width: 400px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-height: 810px){
 
 @supports (-webkit-appearance:none){
 
