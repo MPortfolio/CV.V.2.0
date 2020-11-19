@@ -679,7 +679,7 @@ body {
       justify-content: space-around;
   width: 300px;
   position: absolute;
-  bottom: 100px;
+  bottom: 0px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -2013,13 +2013,7 @@ body {
   }
 }
 
-@media screen and (max-height: 600px) {
-  .field {
-    bottom: 50px;
-  }
-}
-
-@media screen and (max-height: 380PX) {
+@media screen and (max-height: 320px) {
   .field {
     display: none;
   }
@@ -2180,15 +2174,7 @@ body {
 
 }
 
- @media screen and (max-height: 600px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media screen and (max-height: 380PX){
+ @media screen and (max-height: 320px){
 
 @supports (-webkit-appearance:none){
 
