@@ -1437,7 +1437,11 @@ body {
 }
 
 .notie-background-overlay {
-  background: grey;
+  background: #58616d;
+}
+
+.notie-background-neutral.notie-button {
+  display: none;
 }
 
 .loading {
