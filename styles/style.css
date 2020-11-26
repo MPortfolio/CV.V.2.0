@@ -231,10 +231,6 @@ img {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#313741', endColorstr='#000000',GradientType=1 );
 }
 
-.about {
-  padding: 100px 0 50px 0;
-}
-
 .pp-scrollable {
   overflow-y: auto !important;
   overflow-x: hidden;
@@ -2064,9 +2060,10 @@ body {
 
 @media screen and (max-height: 810px) {
   .skills,
-  .works {
+  .works,
+  .about {
     display: block;
-    padding: 100px 0 0 0;
+    padding: 90px 0 0 0;
   }
 }
 
