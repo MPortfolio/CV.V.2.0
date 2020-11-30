@@ -1112,6 +1112,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $('html').removeClass('lock')
         $('.header__nav').removeClass('is-active')
         $('.ham').removeClass('active')
+        
     });
 });
 
