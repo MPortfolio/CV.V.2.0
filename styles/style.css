@@ -742,8 +742,7 @@ body {
 }
 
 .about {
-  -webkit-box-shadow: 0 0 40px -6px #8491a2;
-          box-shadow: 0 0 40px -6px #8491a2;
+  padding: 100px 0px;
 }
 
 .about .about__foto {
