@@ -759,7 +759,7 @@ body {
       justify-content: space-around;
   width: 300px;
   position: absolute;
-  bottom: 0px;
+  bottom: 35px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -2178,7 +2178,7 @@ body {
   }
 }
 
-@media screen and (max-height: 523px) {
+@media screen and (max-height: 586px) {
   .field {
     display: none;
   }
@@ -2355,7 +2355,7 @@ body {
 
 }
 
- @media screen and (max-height: 523px){
+ @media screen and (max-height: 586px){
 
 @supports (-webkit-appearance:none){
 
