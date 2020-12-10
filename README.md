@@ -1,4 +1,3 @@
-# Welcome to my web resume!
 ![enter image description here](https://i.imgur.com/Xin8SlF.png)
 ## ## You can see the site in action
 ><a  href="https://oleg312.github.io/CV./">LOOK THIS SITE</a>
