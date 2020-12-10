@@ -1055,7 +1055,6 @@ body {
   font-family: "OpenSans-Bold";
   text-transform: uppercase;
   letter-spacing: 0.9px;
-  margin-bottom: 50px;
 }
 
 .filter {
@@ -1069,6 +1068,7 @@ body {
       flex-wrap: wrap;
   max-width: 1024px;
   margin: 0 auto;
+  padding: 20px 0px;
 }
 
 .button {
