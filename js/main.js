@@ -1033,7 +1033,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let tajam = document.querySelector('#tajam')
     let agency = document.querySelector('#agency')
     let maglic = document.querySelector('#maglic')
-    let cv = document.querySelector('#cv')
     tajam.onclick = function () {
         notie.select({
             text: 'Your choise',
@@ -1043,7 +1042,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             choices: [
                 {
-                    text: '<a href="https://github.com/MPortfolio/Tajam">GitHub</a>',
+                    text: '<a href="https://github.com/oleg312/Tajam">GitHub</a>',
                 },
             ]
         })
@@ -1057,28 +1056,10 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             choices: [
                 {
-                    text: '<a href="https://github.com/MPortfolio/Agency">GitHub</a>',
+                    text: '<a href="https://github.com/oleg312/Agency">GitHub</a>',
                 },
                 {
-                    text: '<a href="https://mportfolio.github.io/Agency/">LiveDemo</a>',
-                },
-
-            ]
-        })
-    }
-    cv.onclick = function () {
-        notie.select({
-            text: 'Your choise',
-            cancelText: 'Close',
-            cancelCallback: function () {
-                notie.alert({ type: 5, text: 'Cancel!' })
-            },
-            choices: [
-                {
-                    text: '<a href="https://github.com/oleg312/CV">GitHub</a>',
-                },
-                {
-                    text: '<a href="https://oleg312.github.io/CV/">LiveDemo</a>',
+                    text: '<a href="https://oleg312.github.io/Agency/">LiveDemo</a>',
                 },
 
             ]
@@ -1093,10 +1074,10 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             choices: [
                 {
-                    text: '<a href="https://github.com/MPortfolio/Maglic">GitHub</a>',
+                    text: '<a href="https://github.com/oleg312/Maglic">GitHub</a>',
                 },
                 {
-                    text: '<a href="https://mportfolio.github.io/Maglic/">LiveDemo</a>',
+                    text: '<a href="https://oleg312.github.io/Maglic/">LiveDemo</a>',
                 },
 
             ]

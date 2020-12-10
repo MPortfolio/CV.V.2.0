@@ -2032,6 +2032,12 @@ body {
   }
 }
 
+@media screen and (max-width: 465px) {
+  .filter {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 440px) {
   .about .about__btn {
     padding: 13px 10px;
@@ -2196,6 +2202,14 @@ body {
 }
 
  @media screen and (max-width: 500px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-width: 465px){
 
 @supports (-webkit-appearance:none){
 
