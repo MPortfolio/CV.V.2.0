@@ -114,12 +114,12 @@ th:not([align]) {
 }
 
 ::-moz-selection {
-  background-color: grey;
+  background-color: #02cfb4;
   color: #fff;
 }
 
 ::selection {
-  background-color: grey;
+  background-color: #02cfb4;
   color: #fff;
 }
 
@@ -568,12 +568,6 @@ body {
   height: 100%;
 }
 
-.particles-js-canvas-el {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .intro {
   width: 100%;
   height: 100%;
@@ -583,6 +577,8 @@ body {
 
 .intro .text-left {
   font-family: "OpenSans-Regular";
+  position: relative;
+  z-index: 15;
 }
 
 .intro .text-left p {
@@ -599,6 +595,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: -1;
 }
 
 .intro .intro__title {
@@ -616,52 +614,9 @@ body {
 
 .typewriter {
   overflow: hidden;
-  border-right: .15em solid orange;
   white-space: nowrap;
   margin: 0;
   font-size: 40px;
-  -webkit-animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
-          animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
-}
-
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: #ffffff;
-  }
-}
-
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: #ffffff;
-  }
 }
 
 .field {
@@ -739,6 +694,12 @@ body {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .about {
@@ -986,6 +947,11 @@ body {
           align-items: center;
   color: #ffffff;
   margin-left: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
 }
 
 .skills .progress__name {
@@ -1011,6 +977,70 @@ body {
   transition: all .5s ease-out;
 }
 
+.skillsSection.active .htmlskills {
+  -webkit-transition: width 2s ease;
+  -o-transition: width 2s ease;
+  transition: width 2s ease;
+  width: 85% !important;
+}
+
+.skillsSection.active .bootstrapskills {
+  -webkit-transition: width 2.1s ease;
+  -o-transition: width 2.1s ease;
+  transition: width 2.1s ease;
+  width: 80% !important;
+}
+
+.skillsSection.active .javascripskills {
+  -webkit-transition: width 2.2s ease;
+  -o-transition: width 2.2s ease;
+  transition: width 2.2s ease;
+  width: 55% !important;
+}
+
+.skillsSection.active .gitskills {
+  -webkit-transition: width 2.3s ease;
+  -o-transition: width 2.3s ease;
+  transition: width 2.3s ease;
+  width: 70% !important;
+}
+
+.skillsSection.active .gulpskills {
+  -webkit-transition: width 2.4s ease;
+  -o-transition: width 2.4s ease;
+  transition: width 2.4s ease;
+  width: 60% !important;
+}
+
+.skillsSection.active .figmaskills {
+  -webkit-transition: width 2.5s ease;
+  -o-transition: width 2.5s ease;
+  transition: width 2.5s ease;
+  width: 75% !important;
+}
+
+.skillsSection.active .linuxskills {
+  -webkit-transition: width 2.6s ease;
+  -o-transition: width 2.6s ease;
+  transition: width 2.6s ease;
+  width: 45% !important;
+}
+
+.skillsSection.active .englishskills {
+  -webkit-transition: width 2.7s ease;
+  -o-transition: width 2.7s ease;
+  transition: width 2.7s ease;
+  width: 50% !important;
+}
+
+.skillsSection.active .progress span {
+  -webkit-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
 .active-path {
   fill: white;
   -webkit-transition: all .5s ease-out;
@@ -1020,6 +1050,9 @@ body {
 
 .bg-success {
   background-color: #05c7ae !important;
+  -webkit-transition: width 2s linear;
+  -o-transition: width 2s linear;
+  transition: width 2s linear;
 }
 
 .works {
