@@ -8386,15 +8386,18 @@
 });
 
 
-$(document).ready(function () {
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // ! PAGEPILLING
     $('#pagepiling').pagepiling({
         menu: '#nav',
-        direction: 'vertical',
+        direction: 'horizontal',
         verticalCentered: true,
         sectionsColor: [],
         anchors: ['intro', 'about', 'skills', 'works', 'contact'],
         scrollingSpeed: 800,
-        easing: 'swing',
+        easing: 'linear',
         loopBottom: false,
         loopTop: false,
         css3: true,
@@ -8411,15 +8414,6 @@ $(document).ready(function () {
         afterLoad: function (anchorLink, index) { },
         afterRender: function () { },
     });
-});
-// !FILTRING WORKS
-let mixer = mixitup('.content', {
-    animation: {
-        duration: 500,
-    }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     // ! DOWNLOAD RESUME
     let aboutBtn = document.querySelector('.about__btn')
     aboutBtn.onclick = function () {
@@ -8492,11 +8486,17 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.ham').removeClass('active')
 
     })
+    // !FILTRING WORKS
+    let mixer = mixitup('.content', {
+        animation: {
+            duration: 500,
+        }
+    });
 });
 
 // ? PRELOADER
 $(window).on('load', function () {
-    $('.loading').addClass('none')
+    $('.loading').fadeOut(600)
 });
 // !PARTICLES
 
