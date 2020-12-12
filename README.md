@@ -1,4 +1,4 @@
-![enter image description here](https://i.imgur.com/Xin8SlF.png)
+![enter image description here](https://i.imgur.com/RFOiJdW.png)
 ## ## You can see the site in action
 ><a  href="https://oleg312.github.io/CV./">LOOK THIS SITE</a>
 ## ## How to use
