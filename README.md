@@ -5,7 +5,7 @@
 
 <pre>git clone https://github.com/oleg312/CV.git</pre>
 
-1) Clone or <a  href="https://github.com/oleg312/CV/archive/main.zip">Download</a> **CV.** from GitHub
+1) Clone or <a  href="https://github.com/oleg312/CV/archive/main.zip">Download</a> **CV** from GitHub
 2) Open folder
 3) Double click on index.html
 ## ## Roadmap
