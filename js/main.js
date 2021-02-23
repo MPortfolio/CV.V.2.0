@@ -8421,10 +8421,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('link').click()
     };
     // ! WORKS ALERT
-    let tajam = document.querySelector('#tajam')
+    let php = document.querySelector('#php')
     let agency = document.querySelector('#agency')
     let maglic = document.querySelector('#maglic')
-    tajam.onclick = function () {
+    php.onclick = function () {
         notie.select({
             text: 'Your choise',
             cancelText: 'Close',
@@ -8433,7 +8433,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             choices: [
                 {
-                    text: '<a href="https://github.com/oleg312/Tajam">GitHub</a>',
+                    text: '<a href="https://babakart.com.ua/">LiveDemo</a>',
                 },
             ]
         })

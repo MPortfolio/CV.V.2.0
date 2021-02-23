@@ -300,38 +300,45 @@ img {
   width: 55% !important;
 }
 
-.skillsSection.active .gitskills {
+.skillsSection.active .phpskills {
   -webkit-transition: width 2.3s ease;
   -o-transition: width 2.3s ease;
   transition: width 2.3s ease;
+  width: 45% !important;
+}
+
+.skillsSection.active .gitskills {
+  -webkit-transition: width 2.4s ease;
+  -o-transition: width 2.4s ease;
+  transition: width 2.4s ease;
   width: 70% !important;
 }
 
 .skillsSection.active .gulpskills {
-  -webkit-transition: width 2.4s ease;
-  -o-transition: width 2.4s ease;
-  transition: width 2.4s ease;
+  -webkit-transition: width 2.5s ease;
+  -o-transition: width 2.5s ease;
+  transition: width 2.5s ease;
   width: 60% !important;
 }
 
 .skillsSection.active .figmaskills {
-  -webkit-transition: width 2.5s ease;
-  -o-transition: width 2.5s ease;
-  transition: width 2.5s ease;
+  -webkit-transition: width 2.6s ease;
+  -o-transition: width 2.6s ease;
+  transition: width 2.6s ease;
   width: 75% !important;
 }
 
 .skillsSection.active .linuxskills {
-  -webkit-transition: width 2.6s ease;
-  -o-transition: width 2.6s ease;
-  transition: width 2.6s ease;
+  -webkit-transition: width 2.7s ease;
+  -o-transition: width 2.7s ease;
+  transition: width 2.7s ease;
   width: 45% !important;
 }
 
 .skillsSection.active .englishskills {
-  -webkit-transition: width 2.7s ease;
-  -o-transition: width 2.7s ease;
-  transition: width 2.7s ease;
+  -webkit-transition: width 2.8s ease;
+  -o-transition: width 2.8s ease;
+  transition: width 2.8s ease;
   width: 50% !important;
 }
 
@@ -705,6 +712,18 @@ body {
   white-space: nowrap;
   margin: 0;
   font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.typewriter img {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
 }
 
 .field {
