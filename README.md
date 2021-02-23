@@ -1,11 +1,11 @@
 ![enter image description here](https://i.imgur.com/RFOiJdW.png)
 ## ## You can see the site in action
-><a  href="https://oleg312.github.io/CV./">LOOK THIS SITE</a>
+><a  href="https://oleg312.github.io/CV/">LOOK THIS SITE</a>
 ## ## How to use
 
-<pre>git clone https://github.com/oleg312/CV..git</pre>
+<pre>git clone https://github.com/oleg312/CV.git</pre>
 
-1) Clone or <a  href="https://github.com/oleg312/CV./archive/main.zip">Download</a> **CV.** from GitHub
+1) Clone or <a  href="https://github.com/oleg312/CV/archive/main.zip">Download</a> **CV.** from GitHub
 2) Open folder
 3) Double click on index.html
 ## ## Roadmap
