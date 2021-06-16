@@ -9005,8 +9005,10 @@ jQuery(document).ready(function ($) {
       fadeOut: 2000
    });
    preloader.on();
-});
-$(window).on('load', function () {
    $('.loading').fadeOut(700)
    preloader.off();
 });
+// $(window).on('load', function () {
+//    $('.loading').fadeOut(700)
+//    preloader.off();
+// });
