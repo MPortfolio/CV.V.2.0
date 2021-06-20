@@ -8920,10 +8920,10 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById('link').click()
    };
    // ? WORKS ALERT
-   let php = document.querySelector('#php')
+   let real = document.querySelector('#real')
    let agency = document.querySelector('#agency')
    let maglic = document.querySelector('#maglic')
-   php.onclick = function () {
+   real.onclick = function () {
       notie.select({
          text: 'Your choise',
          cancelText: 'Close',
@@ -8975,12 +8975,10 @@ document.addEventListener("DOMContentLoaded", function () {
    }
    // ? HAMBURGER AND NAV
    $(".ham").click(function () {
-      $('html').addClass('lock')
       $('.header__nav').toggleClass('is-active')
       $('.ham').toggleClass('active')
    });
    $(".header__nav a").click(function () {
-      $('html').removeClass('lock')
       $('.header__nav').removeClass('is-active')
       $('.ham').removeClass('active')
 
@@ -9008,7 +9006,3 @@ jQuery(document).ready(function ($) {
    $('.loading').fadeOut(700)
    preloader.off();
 });
-// $(window).on('load', function () {
-//    $('.loading').fadeOut(700)
-//    preloader.off();
-// });
