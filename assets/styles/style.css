@@ -328,14 +328,14 @@ img {
   -webkit-transition: width 2.7s ease;
   -o-transition: width 2.7s ease;
   transition: width 2.7s ease;
-  width: 45% !important;
+  width: 55% !important;
 }
 
 .skillsSection.active .englishskills {
   -webkit-transition: width 2.8s ease;
   -o-transition: width 2.8s ease;
   transition: width 2.8s ease;
-  width: 50% !important;
+  width: 65% !important;
 }
 
 .skillsSection.active .progress span {
@@ -930,7 +930,6 @@ body {
   font-family: "OpenSans-Bold";
   color: #00d7bb;
   font-size: 18px;
-  text-transform: uppercase;
 }
 
 .about .about__text span {
