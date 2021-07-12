@@ -8946,10 +8946,10 @@ document.addEventListener("DOMContentLoaded", function () {
          },
          choices: [
             {
-               text: '<a href="https://github.com/oleg312/Agency">GitHub</a>',
+               text: '<a href="https://github.com/oleh312/Agency">GitHub</a>',
             },
             {
-               text: '<a href="https://oleg312.github.io/Agency/">LiveDemo</a>',
+               text: '<a href="https://oleh312.github.io/Agency/">LiveDemo</a>',
             },
 
          ]
@@ -8964,10 +8964,10 @@ document.addEventListener("DOMContentLoaded", function () {
          },
          choices: [
             {
-               text: '<a href="https://github.com/oleg312/Maglic">GitHub</a>',
+               text: '<a href="https://github.com/oleh312/Maglic">GitHub</a>',
             },
             {
-               text: '<a href="https://oleg312.github.io/Maglic/">LiveDemo</a>',
+               text: '<a href="https://oleh312.github.io/Maglic/">LiveDemo</a>',
             },
 
          ]
